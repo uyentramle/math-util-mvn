@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 1.8 - mượn JDK của Mỹ
+    - name: Set up JDK 8.0 - mượn JDK của Mỹ
       uses: actions/setup-java@v3
       with:
-        java-version: '1.8'
+        java-version: '8.0'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven - đóng gói file .jar bằng lệnh mvn
